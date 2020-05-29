@@ -1,5 +1,5 @@
 ![GitHub](https://img.shields.io/github/license/herig14/Proyecto-PF-56-G3)  ![GitHub](https://img.shields.io/bundlephobia/minzip/mobile-subs-stats) ![GitHub](https://img.shields.io/github/languages/top/Herig14/Proyecto-PF-56-G3)  ![GitHub](https://img.shields.io/npm/v/mobile-subs-stats?color=green&label=mobile-subs-stats)
-# Proyecto Plataformas Web
+
 # Universidad Politécnica Salesiana
 # Examen Primer Parcial
 
@@ -34,7 +34,7 @@ sudo apt-get upgrade
 3. Datos Banco Mundial
   - _Descarga de los datos en formato [CSV](http://api.worldbank.org/v2/es/indicator/IT.NET.USER.ZS?downloadformat=csv)._
 
-### Instalación de nuestra APP 🔧
+# Instalación de nuestra APP 🔧
 
 _Para la ejecucion de la app desarrollada en node.js simplemente instala_
 
@@ -47,7 +47,7 @@ sudo npm i etapia-examen-pw -g
 * _**-f** *file* Path(Ruta) de los datos del Banco Mundial._
 
 ```
-etapia-examen --help
+etapiar-examen --help
 etapia-examen mostrar -c -y -f
 etapia-examen guardar -c -y -f -o
 ```

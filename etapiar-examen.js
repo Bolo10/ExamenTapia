@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const argv = require('./Config/yargs').argv;
 const { analizar } = require('./Buscador/buscar')
 const { printConsola, printGuardar, printmsg } = require('./Vista/consola')
