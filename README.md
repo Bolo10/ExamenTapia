@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/herig14/Proyecto-PF-56-G3)  ![GitHub](https://img.shields.io/bundlephobia/minzip/mobile-subs-stats) ![GitHub](https://img.shields.io/github/languages/top/Herig14/Proyecto-PF-56-G3)  ![GitHub](https://img.shields.io/npm/v/mobile-subs-stats?color=green&label=mobile-subs-stats)
+![GitHub](https://img.shields.io/github/license/herig14/Proyecto-PF-56-G3)  ![GitHub](https://img.shields.io/bundlephobia/minzip/mobile-subs-stats) ![GitHub](https://img.shields.io/github/languages/top/Herig14/Proyecto-PF-56-G3)  
 
 # Universidad Politécnica Salesiana
 # Examen Primer Parcial
@@ -48,8 +48,8 @@ sudo npm i etapia-examen-pw -g
 
 ```
 etapiar-examen --help
-etapia-examen mostrar -c -y -f
-etapia-examen guardar -c -y -f -o
+etapiar-examen mostrar -c -y -f
+etapiar-examen guardar -c -y -f -o
 ```
 
 ### Ejemplo 🔩
@@ -62,7 +62,7 @@ etapia-examen mostrar -y 2015 -f datos.csv
 
 ### Output del Ejemplo ⌨️
 
-<img src="https://github.com/Bolo10/Test/blob/master/Screenshot%20from%202020-05-20%2004-59-30.png?raw=true" alt="Lin Logo" width="719" height="794" />
+<img src="https://github.com/Bolo10/Test/blob/master/Screenshot%20from%202020-05-29%2012-31-22.png" alt="Lin Logo" width="580" height="370" />
 
 
 ## Construido con 🛠️
@@ -75,18 +75,14 @@ _Las herramientas utilizadas en el desarrollo del proyecto son las siguientes:._
 
 ## Nuestro paquete NPM 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://www.npmjs.com/package/mobile-subs-stats)
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://www.npmjs.com/package/examentapia)
 
 ## Autores ✒️
 
 * **Erick Tapia** - *Documentación* - [Bolo10](https://github.com/Bolo10)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/Herig14/Proyecto-PF-56-G3/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
 Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para detalles
-
-
-☕ 🍺 📢 🍺 🎁
 
