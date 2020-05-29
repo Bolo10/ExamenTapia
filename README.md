@@ -39,7 +39,7 @@ sudo apt-get upgrade
 _Para la ejecucion de la app desarrollada en node.js simplemente instala_
 
 ```
-sudo npm i etapia-examen-pw -g
+sudo npm i examentapia -g
 ```
 ### Ayuda / Comandos ⚙️ 📦
 * _**-c** *code* Código ISO 31 ALPHA-3 de los paises._
@@ -47,9 +47,9 @@ sudo npm i etapia-examen-pw -g
 * _**-f** *file* Path(Ruta) de los datos del Banco Mundial._
 
 ```
-etapiar-examen --help
-etapiar-examen mostrar -c -y -f
-etapiar-examen guardar -c -y -f -o
+extapia --help
+extapia mostrar -c -y -f
+extapia guardar -c -y -f -o
 ```
 
 ### Ejemplo 🔩
