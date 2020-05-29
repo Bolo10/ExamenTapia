@@ -1,6 +1,6 @@
 {
     "name": "examentapia",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Examen plataformas web Usuarios que usan internet",
     "main": "app.js",
     "dependencies": {
