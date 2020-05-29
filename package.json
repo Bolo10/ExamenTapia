@@ -1,8 +1,8 @@
 {
     "name": "examentapia",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Examen plataformas web Usuarios que usan internet",
-    "main": "etapiar-examen.js",
+    "main": "app.js",
     "dependencies": {
         "colors": "^1.4.0",
         "country-data": "^0.0.31",
