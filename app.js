@@ -1,20 +1,31 @@
 const argv = require('./Config/yargs').argv;
 const { analizar } = require('./Buscador/buscar')
 const { printConsola, printmsg } = require('./Vista/consola')
+const arch = require('./Modelo/guardartxt').crearArchivo
+
 let comando = argv._[0]
 let path = argv.file
 let pais = argv.country
 let year = argv.year
-let out = argv.out
+
 let data = ""
 let procesar = (callback) => {
-    if (comando != 'publicar' && comando != 'guardar') {
+    if (comando != 'mostrar' && comando != 'guardar') {
         console.log("Comando no reconocido");
-    } else {
+    } else if (comando == 'mostrar') {
         analizar(pais, year, path)
             .then(datos => {
                 data = datos
                 printConsola(datos)
+
+                callback();
+            })
+            .catch(err => printmsg(err.message, "error"))
+    } else {
+        analizar(pais, year, path)
+            .then(datos => {
+                data = datos
+                arch(datos[0].anio, datos[0].name, datos[0].percent, datos[0].code)
 
                 callback();
             })
@@ -25,13 +36,14 @@ let procesar = (callback) => {
 function switchF() {
 
     switch (comando) {
-        case 'publicar':
-            printmsg(publicar(data), "link")
+        case 'mostrar':
+
+
+
+
+
             break;
         case 'guardar':
-            let ob = toJson(data, out)
-            str = `${ob.mensaje}`
-            printmsg(str, "warn")
 
             break;
 
@@ -39,11 +51,5 @@ function switchF() {
             console.log("Comando no reconocido");
     }
 }
-if (out === true && comando == 'guardar') {
-    printmsg("Especifique un nombre el parámetro out", "error");
-} else if (comando == 'guardar' && (out.includes("<") || out.includes(">") || out.includes(":") || out.includes("\"") || out.includes("/") || out.includes("\\") || out.includes("|") || out.includes("?") || out.includes("*"))) {
-    printmsg("El nombre del archivo json no es válido", "error");
-} else {
-    procesar(switchF)
 
-}
+procesar(switchF)

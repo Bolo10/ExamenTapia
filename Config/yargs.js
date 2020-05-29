@@ -1,4 +1,4 @@
-const publicar = {
+const mostrar = {
     file: {
         demand: true,
         alias: 'f',
@@ -32,14 +32,10 @@ const guardar = {
         default: 2018,
         desc: 'Permite especificar el año para el cual se requiere las estadísticas. Por defecto, 2018.'
     },
-    out: {
-        demand: true,
-        alias: 'o',
-        desc: ' Establece el nombre del archivo donde se almacenará los resultados.'
-    }
+
 }
 
-const argv = require('yargs').command('publicar', ' Este comando publicará las estadísticas en una página web básica.', publicar).command('guardar', ' Este comando almacenará los resultados de las estadísticas en un archivo json.', guardar).argv;
+const argv = require('yargs').command('mostrar', ' Este comando mostrará la informacion buscada del pais.', mostrar).command('guardar', ' Este comando almacenará los resultados de las busqueda en un archivo .txt.', guardar).argv;
 
 module.exports = {
     argv

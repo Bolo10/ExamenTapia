@@ -44,7 +44,7 @@ async function analizar(pais, year, csvpath) {
             msg = `No existen registros para el año ${year}`
             throw new Error(msg)
         } else if (paisOB.percent <= 0) {
-            comparacion = `El país ${paisOB.name} no tiene suscripciones resgistradas  en el año ${year}  `
+            comparacion = `El país ${paisOB.name} no tiene usuarios de internet resgistradas  en el año ${year}  `
         }
         return [paisOB, comparacion]
     } catch (error) {
