@@ -7,10 +7,10 @@ colors.setTheme({
     verbose: 'cyan',
     prompt: 'grey',
     info: 'brightGreen',
-    data: 'brightMagenta',
+    data: 'blue',
     help: 'cyan',
     warn: 'yellow',
-    debug: 'blue',
+    debug: 'brightMagenta',
     error: 'red'
 
 });

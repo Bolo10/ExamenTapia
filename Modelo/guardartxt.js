@@ -1,10 +1,10 @@
 const fs = require('fs'); // LLAMADO AL PAQUETE FILESYSTEM LECTURA ESCRITURA DE ARCHIVOS
 
-let crearArchivo = (anio, pais, val, code) => {
+let crearArchivo = (anio, pais, val, code, inf) => {
     return new Promise((resolve, reject) => {
 
         let data = '';
-        data += `Datos: Personas que Usan Internet (% de la poblacion)\n`
+        data += `Datos: ${inf}\n`
         data += `Pais: ${pais}\n`
         data += `Anio: ${anio}\n`
         data += `Valor: ${val}\n`

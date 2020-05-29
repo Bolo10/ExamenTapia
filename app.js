@@ -1,7 +1,7 @@
 const argv = require('./Config/yargs').argv;
 const { analizar } = require('./Buscador/buscar')
-const { printConsola, printmsg } = require('./Vista/consola')
-const arch = require('./Modelo/guardartxt').crearArchivo
+const { printConsola, printGuardar, printmsg } = require('./Vista/consola')
+
 
 let comando = argv._[0]
 let path = argv.file
@@ -25,7 +25,7 @@ let procesar = (callback) => {
         analizar(pais, year, path)
             .then(datos => {
                 data = datos
-                arch(datos[0].anio, datos[0].name, datos[0].percent, datos[0].code)
+                printGuardar(datos)
 
                 callback();
             })
@@ -37,14 +37,8 @@ function switchF() {
 
     switch (comando) {
         case 'mostrar':
-
-
-
-
-
             break;
         case 'guardar':
-
             break;
 
         default:

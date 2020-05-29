@@ -6,6 +6,7 @@ const mostrar = {
     },
     country: {
         demand: true,
+        default: 'ECU',
         alias: 'c',
         desc: 'Permite determinar el país a analizar a través de su código ISO 3166 ALPHA-3.'
     },
@@ -24,6 +25,7 @@ const guardar = {
     },
     country: {
         demand: true,
+        default: 'ECU',
         alias: 'c',
         desc: 'Permite determinar el país a analizar a través de su código ISO 3166 ALPHA-3.'
     },
