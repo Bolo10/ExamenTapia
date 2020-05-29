@@ -1,5 +1,6 @@
-const argv = require('./Config/helpful').argv;
-const { analizar } = require('./Controlador/analisis')
+const argv = require('./Config/yargs').argv;
+const { analizar } = require('./Buscador/buscar')
+const { printConsola, printmsg } = require('./Vista/consola')
 let comando = argv._[0]
 let path = argv.file
 let pais = argv.country
