@@ -56,7 +56,7 @@ extapia guardar -c -y -f -o
 
 _La ejecución se lleva a cabo con el siguiente comando **Asegurate** de haber descargado los datos del banco mundial y **también** colocar correctamente el path(ruta)_
 ```
-etapia-examen mostrar -y 2015 -f datos.csv
+extapia mostrar -y 2015 -f datos.csv
 ```
 
 
