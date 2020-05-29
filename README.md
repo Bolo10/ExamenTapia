@@ -41,6 +41,10 @@ _Para la ejecucion de la app desarrollada en node.js simplemente instala_
 ```
 sudo npm i examentapia -g
 ```
+_Asegurate de crear la carpeta resultados al momento de la descarga del paquete si es linux utiliza la siguiente linea si es windows creala mediante powershell o simplemente utiliza atajos_
+```
+mkdir resultados
+```
 ### Ayuda / Comandos ⚙️ 📦
 * _**-c** *code* Código ISO 31 ALPHA-3 de los paises._
 * _**-y** *year* Año (Desde 1960 - Hasta 2019)._
@@ -57,6 +61,9 @@ extapia guardar -c -y -f -o
 _La ejecución se lleva a cabo con el siguiente comando **Asegurate** de haber descargado los datos del banco mundial y **también** colocar correctamente el path(ruta)_
 ```
 extapia mostrar -y 2015 -f datos.csv
+```
+```
+extapia guardar -y 2015 -f datos.csv
 ```
 
 
